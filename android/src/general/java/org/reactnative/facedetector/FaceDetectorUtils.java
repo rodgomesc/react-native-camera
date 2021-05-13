@@ -26,6 +26,7 @@ public class FaceDetectorUtils {
 
     encodedFace.putInt("faceID", face.getId());
     encodedFace.putDouble("rollAngle", face.getEulerZ());
+    encodedFace.putDouble("pitchAngle", face.getEulerX());
     encodedFace.putDouble("yawAngle", face.getEulerY());
 
     if (face.getIsSmilingProbability() >= 0) {

@@ -144,6 +144,11 @@
             CGFloat rotY = face.headEulerAngleY;
             [resultDict setObject:@(rotY) forKey:@"yawAngle"];
         }
+          // Head is rotated to the right rotX degrees
+        if (face.hasHeadEulerAngleX) {
+            CGFloat rotX = face.headEulerAngleX;
+            [resultDict setObject:@(rotX) forKey:@"pitchAngle"];
+        }
         // Head is tilted sideways rotZ degrees
         if (face.hasHeadEulerAngleZ) {
             CGFloat rotZ = -1 * face.headEulerAngleZ;

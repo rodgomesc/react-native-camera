@@ -30,6 +30,7 @@ public class FaceDetectorUtils {
 
     encodedFace.putInt("faceID", id);
     encodedFace.putDouble("rollAngle", face.getHeadEulerAngleZ());
+    encodedFace.putDouble("pitchAngle", face.getHeadEulerAngleX());
     encodedFace.putDouble("yawAngle", face.getHeadEulerAngleY());
 
     // If classification was enabled:
